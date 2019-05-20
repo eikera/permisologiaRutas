@@ -9,6 +9,10 @@
         {
             "name": "Luciano",
             "email": "luciano.felisiak@experienciafutbol.com"
+        },
+        {
+            "name": "Kevin Enei",
+            "email": "kevinenei@hotmail.com"
         }
     ],
     "minimum-stability": "dev",
