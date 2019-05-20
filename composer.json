@@ -1,5 +1,5 @@
 {
-    "name": "GED/Permissionsrolesandroutes",
+    "name": "permisologia/permissionsrolesandroutes",
     "description": "This package allows to generate permissions roles and routes to dynamically grant access to the app",
     "type": "project",
     "require": {
