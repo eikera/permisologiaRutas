@@ -1,0 +1,20 @@
+{
+    "name": "GED/Permissionsrolesandroutes",
+    "description": "This package allows to generate permissions roles and routes to dynamically grant access to the app",
+    "type": "project",
+    "require": {
+    },
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "Luciano",
+            "email": "luciano.felisiak@experienciafutbol.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "GED\\Permissionsrolesandroutes\\": "src"
+        }
+    }
+}
