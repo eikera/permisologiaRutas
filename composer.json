@@ -1,14 +1,12 @@
 {
     "name": "permisologia/permissionsrolesandroutes",
     "description": "This package allows to generate permissions roles and routes to dynamically grant access to the app",
-    "type": "project",
-    "require": {
-    },
-    "license": "GPL",
+    "type": "library",
+    "license": "MIT",
     "authors": [
         {
-            "name": "Luciano",
-            "email": "luciano.felisiak@experienciafutbol.com"
+            "name": "Luciano Felisiak",
+            "email": "lfelisiak.18@gmail.com"
         },
         {
             "name": "Kevin Enei",
