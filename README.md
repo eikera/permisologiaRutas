@@ -28,7 +28,7 @@ composer require composer require permisologia/permissionsrolesandroutes
 Si ud no usa auto-discovery, agrega el ServiceProvider dentro del array de providers en config/app.php
 
 ```php
-permisologia\permissionsrolesandroutes\App\Providers\PermissionsrolesandroutesProvider::class,
+permisologia\Permissionsrolesandroutes\App\Providers\PermissionsrolesandroutesProvider::class,
 ```
 
 Copy the package config to your local config with the publish command:
