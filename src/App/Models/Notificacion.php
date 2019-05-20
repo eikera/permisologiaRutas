@@ -1,6 +1,6 @@
 <?php
 
-namespace GED\Permissionsrolesandroutes\App\Models;
+namespace permisologia\Permissionsrolesandroutes\App\Models;
 use \Auth;
 use Illuminate\Database\Eloquent\Model;
 

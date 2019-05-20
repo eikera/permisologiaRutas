@@ -1,8 +1,8 @@
 <?php
 
-namespace GED\Permissionsrolesandroutes\App\Models;
+namespace permisologia\Permissionsrolesandroutes\App\Models;
 
-use GED\Permissionsrolesandroutes\App\Models\Notificacion;
+use permisologia\Permissionsrolesandroutes\App\Models\Notificacion;
 
 class Response
 {

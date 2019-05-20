@@ -1,6 +1,6 @@
 <?php
 
-namespace GED\Permissionsrolesandroutes\App\Models;
+namespace permisologia\Permissionsrolesandroutes\App\Models;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Notifications\Notifiable;
 use \App\User as Authenticatable;
@@ -22,6 +22,6 @@ class User extends Authenticatable
     
     public function rol()
     {
-        return $this->belongsTo('GED\Permissionsrolesandroutes\App\Models\Rol');
+        return $this->belongsTo('permisologia\Permissionsrolesandroutes\App\Models\Rol');
     }
 }

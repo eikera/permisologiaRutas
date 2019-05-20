@@ -1,13 +1,13 @@
 <?php
 
-namespace GED\Permissionsrolesandroutes\App\Providers;
+namespace permisologia\Permissionsrolesandroutes\App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Str;
-use GED\Permissionsrolesandroutes\App\Models\User;
-use GED\Permissionsrolesandroutes\App\Models\Permiso;
+use permisologia\Permissionsrolesandroutes\App\Models\User;
+use permisologia\Permissionsrolesandroutes\App\Models\Permiso;
 
 class PermissionsrolesandroutesProvider extends ServiceProvider
 {

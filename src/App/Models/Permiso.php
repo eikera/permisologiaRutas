@@ -1,6 +1,6 @@
 <?php
 
-namespace GED\Permissionsrolesandroutes\App\Models;
+namespace permisologia\Permissionsrolesandroutes\App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -10,7 +10,7 @@ class Permiso extends Model
 
     public function roles()
     {
-        return $this->belongsToMany('GED\Permissionsrolesandroutes\App\Models\Rol');
+        return $this->belongsToMany('permisologia\Permissionsrolesandroutes\App\Models\Rol');
     }
 
 }

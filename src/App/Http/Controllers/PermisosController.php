@@ -1,12 +1,12 @@
 <?php
 
-namespace GED\Permissionsrolesandroutes\App\Http\Controllers;
+namespace permisologia\Permissionsrolesandroutes\App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use \App\Http\Controllers\Controller;
-use GED\Permissionsrolesandroutes\App\Models\Rol;
-use GED\Permissionsrolesandroutes\App\Models\Permiso;
-use GED\Permissionsrolesandroutes\App\Models\Response;
+use permisologia\Permissionsrolesandroutes\App\Models\Rol;
+use permisologia\Permissionsrolesandroutes\App\Models\Permiso;
+use permisologia\Permissionsrolesandroutes\App\Models\Response;
 
 class PermisosController extends Controller
 {
