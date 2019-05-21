@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Str;
 use permisologia\Permissionsrolesandroutes\App\Models\User;
 use permisologia\Permissionsrolesandroutes\App\Models\Permiso;
+use permisologia\Permissionsrolesandroutes\App\Commands\PermisosInstallationCommand;
 
 class PermissionsrolesandroutesProvider extends ServiceProvider
 {
@@ -16,13 +17,12 @@ class PermissionsrolesandroutesProvider extends ServiceProvider
      *
      * @return void
      */
-
-   
      public function register()
     {
         $this->loadViewsFrom(dirname( __DIR__, 2 ).DIRECTORY_SEPARATOR."resources".DIRECTORY_SEPARATOR."views", 'gedpermissionsandroles');
         $this->loadMigrationsFrom(dirname( __DIR__, 2 ).DIRECTORY_SEPARATOR."database".DIRECTORY_SEPARATOR."migrations");
-
+        $this->registerCommand();
+        $this->commands('permisosinstall');
     }
 
     /**
@@ -35,6 +35,13 @@ class PermissionsrolesandroutesProvider extends ServiceProvider
         $this->publishes([
             dirname( __DIR__, 2 ).DIRECTORY_SEPARATOR."resources".DIRECTORY_SEPARATOR."views" => resource_path('views/vendor/gedpermissionsandroles'),
         ]);
+        $this->publishes([
+            dirname( __DIR__, 2 ).DIRECTORY_SEPARATOR."database".DIRECTORY_SEPARATOR."migrations" => base_path('database/migrations/permisos'),
+        ],'permisos_migrations');
+        $this->publishes([
+            dirname( __DIR__, 2 ).DIRECTORY_SEPARATOR."database".DIRECTORY_SEPARATOR."seeds" => base_path('database/seeds/permisos'),
+        ],'permisos_seeds');
+
 
         $this->registerRoutes();
         $this->registerGates();
@@ -83,5 +90,12 @@ class PermissionsrolesandroutesProvider extends ServiceProvider
             }
         }
         return;
+    }
+
+    private function registerCommand()
+    {
+        $this->app->singleton('permisosinstall',function() {
+            return new PermisosInstallationCommand;
+        });
     }
 }

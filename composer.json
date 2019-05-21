@@ -1,6 +1,7 @@
 {
     "name": "permisologia/permissionsrolesandroutes",
     "description": "This package allows to generate permissions roles and routes to dynamically grant access to the app",
+    "keywords": ["laravel", "rutas", "route", "permisologia", "Permissions","Roles","user"],
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -13,6 +14,11 @@
             "email": "kevinenei@hotmail.com"
         }
     ],
+    "require": {
+        "php": ">=7.0",
+        "illuminate/Http": "~5.0",
+        "illuminate/support": "5.5.x|5.6.x|5.7.x|5.8.x"
+    },
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {

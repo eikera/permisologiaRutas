@@ -8,6 +8,7 @@ use \App\User as Authenticatable;
 class User extends Authenticatable
 {
     use Notifiable;
+    protected $table = "users";
     protected $fillable = [
         'id','name', 'email', 'password','rol_id',
     ];
@@ -22,6 +23,6 @@ class User extends Authenticatable
     
     public function rol()
     {
-        return $this->belongsTo('permisologia\Permissionsrolesandroutes\App\Models\Rol');
+        return $this->hasOne('permisologia\Permissionsrolesandroutes\App\Models\Rol','id','rol_id');
     }
 }

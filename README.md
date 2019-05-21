@@ -8,6 +8,29 @@
 
 conceder accesos a rutas con permisos / levantar rutas desde mysql
 
+## Instalación
+
+1) Abrir la consola, navegar hasta la raiz de su proyecto
+
+```shell
+composer require composer require permisologia/permissionsrolesandroutes
+```
+
+2) Agrega el ServiceProvider dentro del array de providers en **config/app.php**.
+
+```php
+permisologia\Permissionsrolesandroutes\App\Providers\PermissionsrolesandroutesProvider::class,
+```
+
+3) Ejecutar el comando de instalación
+```php
+$ php artisan permisos:install
+```
+
+- default email : admin@admin.com
+- default password : 123456
+
+
 ### Note for v1: init
 
  - Inyectar la rutas desde mysql.
@@ -15,24 +38,6 @@ conceder accesos a rutas con permisos / levantar rutas desde mysql
  - Views de permisos y roles.
  - Data de ejemplo como crear las rutas/roles.
 
-## Installation
+### Note for v1.1: Console
 
-Require es el paquete de composer. es recomendable usar el require para el uso de este paquete.
-
-```shell
-composer require composer require permisologia/permissionsrolesandroutes
-```
-
-### Laravel 5.5+:
-
-Si ud no usa auto-discovery, agrega el ServiceProvider dentro del array de providers en config/app.php
-
-```php
-permisologia\Permissionsrolesandroutes\App\Providers\PermissionsrolesandroutesProvider::class,
-```
-
-Copy the package config to your local config with the publish command:
-
-```shell
-php artisan vendor:publish --provider="GED\Permissionsrolesandroutes\App\Providers\PermissionsrolesandroutesProvider"
-```
+ - Comando para generar las rutas/migrations/seeds de manera automática.
