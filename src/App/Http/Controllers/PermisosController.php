@@ -13,7 +13,7 @@ class PermisosController extends Controller
     public function index()
     {
         $data['permisos'] = Permiso::all();
-        return view('permisos.listado',$data);
+        return view('gedpermissionsandroles::permisos.listado',$data);
     }
 
     public function save(Request $request)
