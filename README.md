@@ -13,7 +13,7 @@ conceder accesos a rutas con permisos / levantar rutas desde mysql
 1) Abrir la consola, navegar hasta la raiz de su proyecto
 
 ```shell
-composer require composer require permisologia/permissionsrolesandroutes
+composer require permisologia/permissionsrolesandroutes
 ```
 
 2) Agrega el ServiceProvider dentro del array de providers en **config/app.php**.
